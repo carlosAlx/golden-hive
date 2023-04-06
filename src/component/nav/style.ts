@@ -4,9 +4,10 @@ export const NavMenu = styled.nav`
   width: 100%;
   display: flex;
   align-items: center;
+  margin-top: 10px;
 
   .menu {
-    width: 100%;
+    inline-size: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,12 +18,13 @@ export const NavMenu = styled.nav`
     display: flex;
     flex-direction: row;
     gap: 4rem;
-    border: 1px solid var(--color-primary);
+    margin: 0;
+    justify-content: center;
+    padding-inline-start: 0;
   }
-  strong {
-    color: var(--color-quartenary);
-  }
+  
   a {
     color: var(--color-tertiary);
+    padding: 0.5rem;
   }
 `;
