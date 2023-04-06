@@ -2,4 +2,37 @@
   justify-content: space-between;
   margin: auto;
   row-gap: 2;
+  box-shadow: 1;
+  background-size: auto;
+}
+
+.ts {
+  position: absolute;
+  top: 185px;
+  right: -62px;
+
+}
+.button__content {
+  position: absolute;
+  top: 255px;
+  left: -60px;
+}
+
+.rel {
+  position: relative;
+}
+.img__content{
+  position: relative;
+  margin: auto;
+}
+
+.hexagon {
+  width: 80px;
+  text-align: center;
+  color: black;
+  padding: 36.5px 11px;
+  position: relative;
+  background: linear-gradient(146.88deg, #D0AB4A 15.94%, #F0B954 45.68%, #C4843A 81.81%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: inset 0px -5px 8px rgba(0, 0, 0, 0.5), inset 0px 6px 11px #FFFFFF;
 }

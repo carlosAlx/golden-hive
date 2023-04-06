@@ -4,9 +4,9 @@ type color = {
   colorButton: string;
 };
 export const GlobalStyle = createGlobalStyle`
-*{
-
-}
+*, *:after, *:before {
+    box-sizing: border-box;
+  }
 :root{
     --color-primary: #FBD46D;
     --color-secondary: #0B0B0B;
@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
 body {
     margin: 0;
     background-color: var(--color-secondary);
+    font-family: Elephant;
 }
 a {
     text-decoration: none;

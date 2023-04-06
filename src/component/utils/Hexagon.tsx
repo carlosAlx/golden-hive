@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const HexagonDiv = styled.div`
   background-color: var(--color-primary);
-  color: var(--color-tertiary);
+  color: var(--color-quartenary);
   clip-path: polygon(
     var(--btn-raise) 0%,
     calc(100% - var(--btn-raise)) 0%,

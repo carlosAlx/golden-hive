@@ -24,7 +24,7 @@ export const NavMenu = styled.nav`
   }
   
   a {
-    color: var(--color-tertiary);
+    color: var(--color-quartenary);
     padding: 0.5rem;
   }
 `;
