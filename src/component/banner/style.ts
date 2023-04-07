@@ -32,6 +32,8 @@ export const BannerSection = styled.div`
       #ffc453 52.58%,
       #efa036 86.71%
     );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
     margin: auto;

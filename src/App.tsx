@@ -6,6 +6,8 @@ import styled from 'styled-components'
 import { Banner } from './component/banner/Banner'
 import { About } from './component/about/About'
 import { Product } from './component/Products/Product'
+import { Shop } from './component/shop/Shop'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,7 @@ function App() {
       <Banner />
       <About />
       <Product />
+      <Shop />
     </div>
   )
 }
