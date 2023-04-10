@@ -1,23 +1,27 @@
 import styled from "styled-components";
-import colmeia from "../../assets/colmeia.jpg";
+import bg from "../../assets/bg.png";
 
 export const BannerSection = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 40px auto 0 auto;
-  background-image: url(${colmeia});
+  margin: 30px auto 20px auto;
+  background-image: url(${bg});
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  border-radius: 90%;
-  max-width: 1060px;
-  box-shadow: inset 0px -5px 8px rgba(0, 0, 0, 0.5);
+  background-size: contain;
+  background-position: center;
+  
+  .bg_dark{
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(11, 11, 11, 0) 0%, #0B0B0B 82.2%);
+  }
 
   section {
     block-size: 100vh;
     position: relative;
+    radial-gradient(50% 50% at 50% 50%, rgba(11, 11, 11, 0) 0%, #0B0B0B 82.2%);
   }
 
   h1 {

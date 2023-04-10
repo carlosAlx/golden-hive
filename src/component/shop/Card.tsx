@@ -8,7 +8,7 @@ const Card__slide = styled.div`
   background-color: rgba(242, 187, 90, 0.1);
   border-radius: 50px;
   padding: 10px;
-  margin: auto;
+  margin: 30px auto;
 
   .column {
     display: flex;
@@ -21,6 +21,14 @@ const Card__slide = styled.div`
   }
   p {
     color: var(--color-quartenary);
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: justify;
+    text-transform: capitalize;
+    margin: 0 auto;
   }
   strong {
     color: var(--color-primary);
@@ -37,6 +45,8 @@ export const Card = () => {
             <strong>Flavor :</strong> Fireweed honey has a delicate, sweet
             flavor with subtle floral notes. It has a smooth and creamy texture
             that melts in your mouth.
+          </p>
+          <p>
             <strong>Health Benefits :</strong> Fireweed honey is rich in
             antioxidants, vitamins, and minerals. It has antibacterial and
             anti-inflammatory properties, making it a natural remedy for sore

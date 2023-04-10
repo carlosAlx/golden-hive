@@ -3,15 +3,13 @@ import bee from "../../assets/bee.png";
 import honey from "../../assets/honeyjar-about.png";
 import { AboutSection } from "./style";
 import { Hexagon } from "../utils/Hexagon";
+import { HeaderSection } from "../utils/HeaderSection";
 
 export const About = () => {
   return (
-    <section>
+    <section className="container">
       <AboutSection>
-        <div className="title">
-          <img src={bee} alt="bee" />
-          <h2>About</h2>
-        </div>
+       <HeaderSection title={"About"}/>
         <div className="row">
           <div className="container_text">
             <p>

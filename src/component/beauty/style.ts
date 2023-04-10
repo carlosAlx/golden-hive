@@ -1,23 +1,21 @@
 import styled from "styled-components";
-import cover from "../../assets/cover.png";
+import light from "../../assets/light.png";
 
-export const AboutSection = styled.div`
-  .row {
-    display: flex;
-    flex-direction: row;
-    row-gap: 2rem;
-    align-items: center;
-  }
-  .about__background {
-    background-image: url(${cover});
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-  .container_text {
+export const BeautySectionStyle = styled.div`
+  .colum {
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     align-items: start;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .img__back {
+    background-image: url(${light});
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   p {

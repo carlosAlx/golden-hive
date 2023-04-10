@@ -6,19 +6,6 @@ export const ProductSection = styled.div`
   margin: auto;
   margin-top: 50px;
 
-  .title {
-    display: flex;
-    align-items: center;
-    color: var(--color-quartenary);
-    font-family: "Lora";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 51px;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-  }
-
   .hive-product {
     display: flex;
     flex-wrap: wrap;

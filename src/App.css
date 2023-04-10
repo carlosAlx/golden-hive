@@ -4,14 +4,22 @@
   row-gap: 2;
   box-shadow: 1;
   background-size: auto;
+  background: linear-gradient(#FFBA41, #0B0B0B);
+  background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(249, 186, 27, 0.65) 0%,
+      rgba(217, 217, 217, 0) 100%
+    );
 }
 
 .ts {
   position: absolute;
   top: 185px;
   right: -62px;
-
+  flex: 1;
+  grid-template-columns: 2 ;
 }
+
 .button__content {
   position: absolute;
   top: 255px;
@@ -21,7 +29,8 @@
 .rel {
   position: relative;
 }
-.img__content{
+
+.img__content {
   position: relative;
   margin: auto;
 }

@@ -25,12 +25,26 @@ a {
 strong {
     color: var(--color-quartenary);
 }
-ul {
+ul, li {
     list-style: none;
 }
 .flex {
     display: flex;
     gap: 2rem;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    max-inline-size: 1300px;
+    overflow: hidden;
+    margin: auto;
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 `;

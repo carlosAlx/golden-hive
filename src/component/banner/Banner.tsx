@@ -1,13 +1,13 @@
 import React from "react";
 import { BannerSection } from "./style";
 import honney from "../../assets/honey.png";
-import { Hexagon } from "../utils/Hexagon";
 import { AiOutlineArrowDown } from "react-icons/ai";
 
 export const Banner = () => {
   return (
     <section id="home">
       <BannerSection>
+        <div className="bg_dark"></div>
         <h1>Golden Hive Honey</h1>
         <div className="img__content">
           <img src={honney} alt="" />

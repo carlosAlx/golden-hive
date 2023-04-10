@@ -24,7 +24,7 @@ const HexagonContent = styled.div`
     0 50%
   );
   background-color: var(--color-secondary);
-  padding: 1rem;
+  padding: 1.4rem;
 `;
 type child = {
   children: React.ReactNode;
