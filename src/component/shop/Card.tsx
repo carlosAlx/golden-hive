@@ -4,11 +4,12 @@ import size_section from "../../assets/size-section.png";
 import { Hexagon } from "../utils/Hexagon";
 
 const Card__slide = styled.div`
-  max-width: 800px;
+  width: 850px;
   background-color: rgba(242, 187, 90, 0.1);
   border-radius: 50px;
   padding: 10px;
-  margin: 30px auto;
+  margin: auto;
+ 
 
   .column {
     display: flex;

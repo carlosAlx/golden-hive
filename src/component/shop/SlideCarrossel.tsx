@@ -1,52 +1,55 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  EffectCube,
-  EffectCoverflow,
-  Parallax,
-  EffectFlip,
-  EffectCards,
-  EffectCreative,
-  EffectFade
-} from "swiper";
+import { Navigation, Pagination, EffectCreative } from "swiper";
 import "swiper/swiper-bundle.min.css";
+import "swiper/css";
+import "swiper/css/pagination";
 import { Card } from "./Card";
+
+const pagination = {
+  clickable: true,
+  renderBullet: function (index: number, className: string) {
+    return <span className="pag_five">{index}</span>;
+  },
+};
 
 export const Carrossel = () => {
   return (
     <Swiper
-      modules={[
-        Navigation,
-        Pagination,
-        Scrollbar,
-        A11y,
-        EffectCube,
-        Parallax,
-        EffectCoverflow,
-        EffectFlip,
-        EffectCards,
-        EffectCreative,
-        EffectFade
-      ]}
-      spaceBetween={50}
-      slidesPerView={1}
+      modules={[Navigation, Pagination, EffectCreative]}
+      slidesPerView={"auto"}
+      centeredSlides={true}
       navigation
-      parallax
+      effect={"creative"}
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
-      effect={"slide"}
-      cubeEffect={{
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
+      creativeEffect={{
+        prev: {
+          opacity: 0.3,
+          translate: ["-120%", 0, -500],
+        },
+        next: {
+          opacity: 0.3,
+          translate: ["120%", 0, -500],
+        },
       }}
+      breakpoints={{
+        1025: {
+          creativeEffect: {
+            prev: {
+              opacity: 0.3,
+              translate: ["-90%", 0, -500],
+            },
+            next: {
+              opacity: 0.3,
+              translate: ["90%", 0, -500],
+            },
+          },
+        },
+      }}
+      className="mySwiper"
     >
+      <SwiperSlide>
+        <Card />
+      </SwiperSlide>
       <SwiperSlide>
         <Card />
       </SwiperSlide>

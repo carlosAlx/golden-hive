@@ -46,5 +46,7 @@ ul, li {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-
+.swiper {
+  padding-bottom: 60px;
+  }
 `;
