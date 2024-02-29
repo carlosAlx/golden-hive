@@ -11,17 +11,20 @@ export const BannerSection = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  
-  .bg_dark{
+
+  .bg_dark {
     position: absolute;
     inset: 0;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(11, 11, 11, 0) 0%, #0B0B0B 82.2%);
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(11, 11, 11, 0) 0%,
+      #0b0b0b 82.2%
+    );
   }
 
   section {
     block-size: 100vh;
     position: relative;
-    radial-gradient(50% 50% at 50% 50%, rgba(11, 11, 11, 0) 0%, #0B0B0B 82.2%);
   }
 
   h1 {
@@ -39,7 +42,7 @@ export const BannerSection = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     margin: auto;
   }
   img {

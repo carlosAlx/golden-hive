@@ -1,6 +1,6 @@
 import { ShopSection } from "./style";
 import { Carrossel } from "./SlideCarrossel";
-import { HeaderSection } from "../utils/HeaderSection";
+import { HeaderSection } from "@/component/utils/HeaderSection";
 
 export const Shop = () => {
   return (
